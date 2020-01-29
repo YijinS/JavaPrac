@@ -2,8 +2,8 @@ package chap01;
 
 import java.awt.Toolkit;
 
-public class BeepTask implements Runnable {
-
+public class BeepThread extends Thread {
+	
 	@Override
 	public void run() {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -14,5 +14,4 @@ public class BeepTask implements Runnable {
 		}
 		
 	}
-
 }
